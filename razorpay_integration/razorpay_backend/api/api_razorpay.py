@@ -16,7 +16,6 @@ class CreateOrderAPIView(APIView):
                 amount=create_order_serializer.validated_data.get("amount"),
                 currency=create_order_serializer.validated_data.get("currency")
             )
-            print(order_response)
             response = {
                 "status_code" : status.HTTP_201_CREATED,
                 "message" : "order_created",

@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 python-dotenv = "*"
 razorpay = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

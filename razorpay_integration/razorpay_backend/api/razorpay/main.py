@@ -11,7 +11,6 @@ class RazorpayClient:
         }
         try:
             order_data = client.order.create(data=data)
-            print("##### orderdata", order_data)
             return order_data
         except Exception as e:
             raise ValidationError(
